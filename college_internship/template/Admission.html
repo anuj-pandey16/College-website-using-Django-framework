@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet"  href="../static/CSS/style1.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission-Dr. A.B.J Abdul Kalam Institute of Technology</title>
+   
+</head>
+<body>
+    <div class="Ad-header">
+        <div class="Ad-notice">AKIT Applications Invited for Admission 2023. Apply Now</div>
+        <div class="section-apply grid grid-col-two">
+            <div class="apply-left"><img class="logo_img" src="../static/Image/logo-img.png"/>
+                <h2>Join With AKIT</h2>
+                <p>Dr A.P.J Abdul Kalam Institute of Technology is a prestigious institution that offers a wide range of educational opportunities to its students in the field of Engineering. From its excellent faculty and cutting-edge research to its hands-on approaches to learning, IT Tanakpur is a great choice for anyone looking to pursue a B. Tech degree.
+                  In addition, the institute offers robust extracurricular activities, such as student clubs, sports teams, and internships. 
+                  Furthermore, the Institute is committed to creating an inclusive and diverse learning environment. The school ensures equitable access to academic and extracurricular opportunities, academic resources and support services, and a faculty and staff that create an environment of respect and open dialogue. 
+                  With these resources, students can take advantage of the institute’s generous tuition rates. Anyone looking to gain a quality education from a prestigious institution should strongly consider applying to Dr A.P.J Abdul kalam Institute of Technology, Tanakpur.
+                 </p>
+               <a href="/"><button class="button-1 " role="button">Know More</button></a> 
+            </div>
+            <div class="apply-right">
+                <form action="/Admission" method="post">
+                {% csrf_token %}
+                <div class="apply-contanter">
+                  <h4>Welcome to AKIT</h4>
+                  <div class="row grid grid-col-two">
+                    <div class="input-group input-group-icon">
+                    <div class="input-icon"><i class="fa fa-user"></i></div>
+                      <input type="text" id="name" name="name" placeholder="Full Name"/>
+                    </div>
+                    <div class="input-group input-group-icon">
+                        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+                          <input type="Email" id="email" name="email" placeholder="Email"/>
+                        </div>
+                </div>
+                <div class="row grid grid-col-two">
+                    <div class="input-group input-group-icon">
+                    <div class="input-icon"><i class="fa fa-phone"></i></div>
+                      <input type="number" id="phone" name="phone" placeholder="Mobile No. +91"/>
+                    </div>
+                    <div class="input-group input-group-icon">
+                        <label class="gender" for="gender">Gender:</label>
+                        <select name="gender" id="gender">
+                          <option value="">Please select one…</option>
+                          <option value="female">Female</option>
+                          <option value="male">Male</option>
+                          <option value="other">Other</option>
+                        </select>
+                        </div>
+            </div>
+            <div class="row grid grid-col-two">
+                <div class="input-group input-group-icon">
+                <label class="Dob" for="Dob">DOB</label>
+                <input style="height:30px;" type="date" name="Dob_name" id="dob">
+                </div>
+                <div class="input-group input-group-icon"> 
+                    <label class="state" for="state">State:</label>
+                    <select name="State" id="State" >
+                        <option value="">Please select one…</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="other">Other</option>
+                      </select>                       
+                    </div>
+        </div>
+        <div class="row ">
+            <div class="input-group input-group-icon">
+                <div class="input-icon"><i class="fa fa-address-book"></i></div>
+                <input type="text" id="add_name" name="add_name" placeholder="Address"/>
+           </div>
+    </div>
+
+    <div class="row grid grid-col-two">
+        <div class="input-group input-group-icon">
+        <div class="input-icon"><i class="fa-sharp fa-solid fa-location-pin"></i></div>
+          <input type="text" id="number" name="pincode" placeholder="Pin Code"/>
+        </div>
+        <div class="input-group input-group-icon">
+            <label class="gender" for="gender">Admission</label>
+            <select id="adm_name" name="adm_name">
+              <option value="">Admission looking for</option>
+              <option value="female">B.Tech 1st Year</option>
+              <option value="male">B.Tech Lateral Entry</option>
+            </select>
+            </div>
+</div>
+
+<div class="row ">
+    <div class="input-group input-group-icon">
+        <label class="Course" for="Course">Course </label>
+                    <select name="Course" id="Course">
+                        <option value="">Please select one…</option>
+                        <option value="mech">Mechanical</option>
+                        <option value="civil">Civil</option>
+                        <option value="cse">Computer Science & Engineering</option>
+                        <option value="ai">Artificial intelligence & Mechine learning</option>
+                        <option value="robotics">Robotics & Autometion </option>
+                      </select> 
+   </div>
+</div>
+<div class="row ">
+    <div class="input-group input-group-icon">
+        <input type="checkbox" name="declaration" class="declaration"><p class="declaration-p">I authorize AKIT to contact me with updates/ notifications via Email/ SMS/ Whatsapp/ Call, which overrides DND/NDNC registration.*</p>
+   </div>
+</div>
+<div class="row grid grid-col-two">
+    <div class="input-group input-group-icon">
+        <a href="/"><button class="button-1 " role="button">Submit</button></a> 
+    </div>
+
+</div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

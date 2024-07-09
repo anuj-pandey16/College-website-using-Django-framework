@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="../static/CSS/style.css"/>
+    <link rel="stylesheet"  href="../static/CSS/media.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+       <title>{% block title %} {% endblock title %}</title>
+</head>
+<body >
+    <!-- HERO SECTION-->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvRvwekb-og7QJAqbafqPXW1uWjhhI548W-hvItvvDpDvu2Q/viewform"><div class="noticeBox1"><i class="fa-solid fa-laptop"></i><p>Apply Online</p> </div>
+        </a>
+        <a href="doc/ENQUIRY-FORM-2022-23-1.pdf"><div class="noticeBox2"><i class="fa-solid fa-id-card"></i><p>ENQUIRY FORM</p></div>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=919548302038&text&type=phone_number&app_absent=0"><div class="noticeBox3"><i class="fa-brands fa-whatsapp"></i><p> +919548302038</p></div>
+        </a>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <img class="logo_img" src="../static/Image/logo-img.png"/>
+        <!-- <div class="logo">Dr. APJ Abdul kalam<br/> institude of technology tanakpur</div> -->
+        
+        <!-- NAVIGATION MENU -->
+        
+        <ul class="nav-links">
+        
+        <!-- USING CHECKBOX HACK -->
+        
+        <input type="checkbox" id="checkbox_toggle" />
+        
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+        <!-- NAVIGATION MENUS -->
+        
+        <div class="menu">
+        
+        <li><a href="/">Home</a></li>
+        
+        <li class="About"><a href="/">About Us</a>
+            <ul class="dropdown">
+                <li><a href="/Utu">About UTU</a></li>
+                <li><a href="/Institude">About Institude</a></li>
+                <li><a href="/Facilities">Facilities</a></li>      
+                <li><a href="/Dress">Dress Code</a></li>                
+            </ul>
+        </li>
+        
+    <li class="Academics">
+        <a href="/">Academics</a>
+        <ul class="dropdown"> 
+            <li><a href="/Academics_Calender">Academics Calender</a></li>
+            <li><a href="/Course_Offered">Course Offered</a></li>
+            <li><a href="/Syllabus">Syllabus</a></li>
+            <li><a href="/Induction_Programme">Induction Programme</a></li>        
+        </ul>
+    </li>
+        
+    <li class="Admission"><a href="/">Admissions</a>
+        <ul class="dropdown">
+                <li><a href="/Admission_Process">Admission Process</a></li>
+                <li><a href="/Admission_Enquiry">Admission Enquiry</a></li>
+                <li><a href="/Fee_Stucture">Fee Stucture</a></li>
+                <li><a href="/Course_Offered">Course</a></li>                
+        </ul>
+    </li>
+        
+        <li class="Departments"><a href="/">Departments</a>
+            <ul class="dropdown">
+                <li><a href="/Computer_Science_&_engineering">Computer Science & Engineering</a></li>
+                <li><a href="/Artificial_Intelligence_&_Machine_Learning">Artificial Intelligence & Machine Learning</a></li>     
+                <li><a href="/Robotics_&_Automation">Robotics & Automation</a></li>        
+                <li><a href="/Mechanical_Engineering">Mechanical Engineering</a></li>   
+                <li><a href="/Civil_Engineering">Civil Engineering</a></li>
+            </ul>
+        </li>
+
+        <li class="Students_Corner"><a href="/">Students Corner</a>
+            <ul class="dropdown">
+                <li><a href="/Club">Clubs</a></li>
+                <li><a href="/Gallery">Gallery</a></li>
+                <li><a href="/Previous">Previous Year Paper</a></li>
+                <li><a href="/Student_Login">Student Login</a></li>
+                </ul>
+        </li>
+
+        <li class="hidden sticky-btn"><a href="/"><button class="button-1 " role="button">Apply Now </button></a></li>
+        <li><a href="/"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        </div>
+        
+        </ul> 
+    </nav>
+{% block body %} {% endblock body %}
+
+<!-- Created based on Youtube [CodingLab](https://www.youtube.com/@CodingLabYT)--> 
+<!-- Popup  -->
+
+  <!-- ---- Boxicons CSS ---- -->
+  <link
+  href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+
+<!--  Codes -->
+<div class="wrapper">
+  <div class="title-box">
+    <i class="bx bx-cookie"></i>
+    <h3>Cookies Consent</h3>
+  </div>
+  <div class="info">
+    <p>
+      This website use cookies to help you have a superior and more relevant
+      browsing experience on the website. <a href="#"> Read more...</a>
+    </p>
+  </div>
+  <div class="buttons">
+    <button class="button" id="acceptBtn">Accept</button>
+    <button class="button">Decline</button>
+  </div>
+</div>
+
+<footer class="grid grid-four-col">
+  <div class="po">
+      <div class="fHeading">PROGRAM OFFERED</div>
+      <ul>
+          <li><a href="civil.html">Civil Engineering</a></li>
+          <li><a href="mech.html">Mechanical Engineering</a></li>
+          <li><a href="cse.html">Computer Science Engineering</a></li>
+          <li><a href="Ai.html">Artificial Intelligence & Machine Learning</a></li>
+          <li><a href="Robotics.html">Robotics & Automation</a></li>
+      </ul>
+  </div>
+  <div class="au">
+      <div class="fHeading">ABOUT US</div>
+      <ul>
+          <li><a href="About.html">About UTU</a></li>
+          <li><a href="About.html">About Institude</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="course.html">Syllabus</a></li>
+          <li><a href="About.html">Dress Code</a></li>
+
+      </ul>
+
+  </div>
+  <div class="ac">
+      <div class="fHeading">ACADEMICS</div>
+      <ul>
+          <li><a href="doc/Academic-Calender.pdf">Academic Calendar</a></li>
+          <li><a href="admission.html">Admission Process</a></li>
+          <li><a href="fee.html">Fee Structure</a></li>
+            <li><a href="/Course_Offered">Course Offered</a></li>
+            <li><a href="/Syllabus">Syllabus</a></li>
+            <li><a href="/Induction_Programme">Induction Programme</a></li>
+      </ul>
+  </div>
+  <div class="ql">
+      <div class="fHeading">QUICK LINKS</div>
+      <p> <i class="fa-solid fa-location-arrow"></i>AAMBAGH, TANAKPUR</p><br/>
+      <p> <i class="fa-solid fa-location-dot"></i>Aambag, Tanakpur, Uttarakhand 262309</p><br/>
+      <span>
+      <a href="https://www.facebook.com/pilibhittigerreserve.in">  <i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/pilibhittiger.reserve/">  <i class="fa-brands fa-instagram"></i></a>
+      <a href="https://twitter.com/PilibhitR">  <i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.youtube.com/channel/UCMCfyY2Xn7vVxg0twh4XRzw?view_as=subscriber">  <i class="fa-brands fa-youtube"></i></a>
+      </span>
+      <div id="google_translate_element"></div>
+       <script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+       <script>
+function googleTranslateElementInit(){
+   new google.translate.TranslateElement(
+       {pageLanguage:'en'},
+       'google_translate_element'
+   );
+}
+       </script>
+   
+  </div>
+</footer>
+<div class="copy"><p>copyright ©️2022 all rights reserved || this website made by <a href="https://techcoder.info/">ittanakpur</a> </p></div>
+</body>
+</html>
+<script src="../static/JS/index.js"></script>

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Faculty - Dr. A.B.J Abdul Kalam Institute of Technology{% endblock title %}
+{% block header-img %}background:url(../static/Image/institute-fade.png)no-repeat center center/cover;{% endblock header-img %}
+
+<!--/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                                             hero section Text
+ *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/-->
+ {% block header %} 
+ <div class="hero-text">
+    <h1>Faculty </h1>
+ </div>
+ {% endblock header %}
+ {% block body %}
+ <Section class="faculty-section grid grid-col-two">
+    <div class="F-left">
+        <img src="../static/Image/diractor.jpg" alt="">
+    </div>
+    <div class="F-right">
+        <h2>About Director</h2><br>
+        <p>Prof. Amit Agarwal is a respected figure in the education field. He has been working with the institute and has played an instrumental role in its success.
+    </div>
+ </section>
+ {% endblock body %}

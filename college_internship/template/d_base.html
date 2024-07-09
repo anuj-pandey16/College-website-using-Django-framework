@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="../static/CSS/style1.css"/>
+    <link rel="stylesheet"  href="../static/CSS/media.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/Image/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/Image/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/Image/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="../static/Image/Favicon/site.webmanifest">
+       <title>{% block title %} {% endblock title %}</title>
+</head>
+<body >
+    <!-- HERO SECTION-->
+        <a href="/Admission"><div class="noticeBox1"><i class="fa-solid fa-laptop"></i><p>Apply Online</p> </div>
+        </a>
+        <a href="doc/ENQUIRY-FORM-2022-23-1.pdf"><div class="noticeBox2"><i class="fa-solid fa-id-card"></i><p>ENQUIRY FORM</p></div>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=919548302038&text&type=phone_number&app_absent=0"><div class="noticeBox3"><i class="fa-brands fa-whatsapp"></i><p> +919548302038</p></div>
+        </a>
+  <div class="d-header" style=" {% block d-header-img %}{% endblock d-header-img %}">
+    <nav class="navbar">
+        <!-- LOGO -->
+        <img class="logo_img" src="../static/Image/logo-img.png"/>
+        <!-- <div class="logo">Dr. APJ Abdul kalam<br/> institude of technology tanakpur</div> -->
+        
+        <!-- NAVIGATION MENU -->
+        
+        <ul class="nav-links">
+        
+        <!-- USING CHECKBOX HACK -->
+        
+        <input type="checkbox" id="checkbox_toggle" />
+        
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+        <!-- NAVIGATION MENUS -->
+        
+        <div class="menu">
+        
+        <li><a href="/">Home</a></li>
+        
+        <li class="About"><a href="/">About Us</a>
+            <ul class="dropdown">
+                <li><a href="/Utu">About UTU</a></li>
+                <li><a href="/Institude">About Institute</a></li>
+                <li><a href="/Facilities">Facilities</a></li>      
+                <li><a href="/Dress_code">Dress Code</a></li>                
+            </ul>
+        </li>
+        
+    <li class="Academics">
+        <a href="/Academics">Academics</a>
+    </li>
+        
+    <li class="Admission"><a href="/">Admissions</a>
+        <ul class="dropdown">
+                <li><a href="/Admission_Process">Admission Process</a></li>
+                <li><a href="/Admission_Enquiry">Admission Enquiry</a></li>
+                <li><a href="/Fee_Structure">Fee Stucture</a></li>
+                <li><a href="/Course_Offered">Course</a></li>                
+        </ul>
+    </li>
+        
+        <li class="Departments"><a href="/">Departments</a>
+            <ul class="dropdown">
+                <li><a href="/Computer_Science_and_engineering">Computer Science & Engineering</a></li>
+                <li><a href="/Artificial_Intelligence_and_Machine_Learning">Artificial Intelligence & Machine Learning</a></li>     
+                <li><a href="/Robotics_and_Automation">Robotics & Automation</a></li>        
+                <li><a href="/Mechanical_Engineering">Mechanical Engineering</a></li>   
+                <li><a href="/Civil_Engineering">Civil Engineering</a></li>
+            </ul>
+        </li>
+
+        <li class="Students_Corner "><a href="/">Students Corner</a>
+            {% comment %} <ul class="dropdown hidden">
+                <li><a href="/Club">Clubs</a></li>
+                <li><a href="/Gallery">Gallery</a></li>
+                <li><a href="/Previous">Previous Year Paper</a></li>
+                <li><a href="/Student_Login">Student Login</a></li>
+                </ul> {% endcomment %}
+        </li>
+
+        <li class="hidden sticky-btn"><a href="/Admission"><button class="button-1 " role="button">Apply Now </button></a></li>
+        <li class="hidden sticky-btn-2"> <input class=" puchu" style="background: none; border:none; color:#fff;border-bottom:2px solid #fff; width: 150px; height:27px; margin-right:-30px;" type="text"/> </li>
+        <li><a><i class="fa-solid fa-magnifying-glass search" style="margin-right: 10px;"></i></a></li>
+
+        </div>
+        
+        </ul> 
+    </nav>
+        {% block d-header %} {% endblock d-header %}
+        </div>
+        <section class="dd-header">
+    <div class="d-hero grid grid-col-two">
+        <div class="h-right">
+            <div class="h-container">
+                <div class="demo">
+                    <div class="box">
+                      <div class="hover-point"></div>
+                      <div class="hover-point"></div>
+                      <div class="hover-point"></div>
+                      <div class="hover-point"></div>
+                      <div class="hover-point"></div>
+                      <div class="hover-point"></div>
+                      <div class="hover-point"></div>
+                      <div class="hover-point"></div>
+                      <div class="box-contents" style="{% block banner_img %} {% endblock banner_img %}"></div>
+                    </div>
+                  </div>
+              </div>
+   </div>
+        <div class="h-left">
+            <div class="main-heading">
+                {% block Branch %}{% endblock Branch %}
+        </div>
+    <p>{% block Branch-content %}{% endblock Branch-content %} </p>
+    <a href="/Admission"><button style="margin-top:20px;" class="button-1 " role="button">Apply Now </button></a>
+    </div>
+    </div>
+</section>
+
+<section class="d-main grid grid-col-two">
+    <div class="main-left">
+        <div class="d-heading">
+            About 
+        </div>
+        <p>{% block about %}{% endblock about %} </p>
+    </div>
+    <div class="main-right">
+        <div class="d-heading">
+            HOD 
+        </div>
+        <div class="main-card 1">
+            <div class="main-card_image"> <img src="{% block Hod-pic %}{% endblock Hod-pic %}" /> </div>
+            <div class="main-card_title title-white">
+              <!-- <p>main-Card Title</p> -->
+            </div>
+          </div>
+    </div>
+   
+</section>
+<section class="c-main">
+    <div class="d-heading">
+        Facultys
+    </div>
+    <div class="cards-list">
+        <div class="main-card 1">
+            <div class="main-card_image"> <img src="{% block f1-img %}{% endblock f1-img %}" /> </div>
+            <div class="main-card_title title-white">
+              <p>{% block f1-name %}{% endblock f1-name %}</p>
+            </div>
+          </div>
+        <div class="main-card 1">
+          <div class="main-card_image"> <img src="{% block f2-img %}{% endblock f2-img %}" /> </div>
+          <div class="main-card_title title-white">
+            <p>{% block f2-name %}{% endblock f2-name %}</p>
+          </div>
+        </div>
+       
+          <div class="main-card 1">
+            <div class="main-card_image"> <img src="{% block f3-img %}{% endblock f3-img %}" /> </div>
+            <div class="main-card_title title-white">
+              <p>{% block f3-name %}{% endblock f3-name %}</p>
+            </div>
+          </div>
+          <div class="main-card 1">
+            <div class="main-card_image"> <img src="{% block f4-img %}{% endblock f4-img %}" /> </div>
+            <div class="main-card_title title-white">
+              <p>{% block f4-name %}{% endblock f4-name %}</p>
+            </div>
+          </div>
+        
+        </div>
+</section>
+
+<section class="c-main">
+    <div class="d-heading">
+        Facilities    </div>
+<div class="facilities-box grid grid-four-col">
+    <div id="main-box"><div id="f-box">1</div><p>{% block f-box1 %}{% endblock f-box1 %} </p></div>
+    <div id="main-box"><div id="f-box">2</div><p>{% block f-box2 %}{% endblock f-box2 %}</p></div>
+    <div id="main-box"><div id="f-box">3</div><p>{% block f-box3 %}{% endblock f-box3 %}</p></div>
+    <div id="main-box"><div id="f-box">4</div><p>{% block f-box4 %}{% endblock f-box4 %}</p></div>
+    <div id="main-box"><div id="f-box">5</div><p>{% block f-box5 %}{% endblock f-box5 %}</p></div>
+    <div id="main-box"><div id="f-box">6</div><p>{% block f-box6 %}{% endblock f-box6 %}</p></div>
+    <div id="main-box"><div id="f-box">7</div><p>{% block f-box7 %}{% endblock f-box7 %} </p></div>
+    <div id="main-box"><div id="f-box">8</div><p>{% block f-box8 %}{% endblock f-box8 %}</p></div>
+</div>
+</section>
+
+<section class="Specilatation grid grid-three-col">
+    <div class="s-content"><div class="d-heading">
+        {% block Lab-name %}{% endblock Lab-name %}    </div>
+    <p>{% block lab-content %}{% endblock lab-content %}
+    </p>
+    </div>
+    <div class="s-name"><div class="d-heading">
+        Specilatation    </div>
+    <ul>
+        <li>Cyber Security</li>
+        <li>AI & ML</li>
+        <li>Android Development</li>
+    </ul></div>
+    <div class="s-img">
+        <img src="{% block lab-img %}{% endblock lab-img %}" alt="">
+    </div>
+</section>
+
+<section class="syllbus">
+    <div class="d-heading">
+        Syllabus    </div>
+<div class="facilities-box grid grid-four-col">
+    <a href="{% block Syllabus-pdf-y1 %}{% endblock Syllabus-pdf-y1 %}" download><div id="main-box"><div id="f-box">1</div><p>First Year</p></div></a>
+    <a href="{% block Syllabus-pdf-y2 %}{% endblock Syllabus-pdf-y2 %}" download><div id="main-box"><div id="f-box">2</div><p>Second Year</p></div></a>
+    <a href="{% block Syllabus-pdf-y3 %}{% endblock Syllabus-pdf-y3 %}" download><div id="main-box"><div id="f-box">3</div><p>Third Year</p></div></a>
+    <a href="{% block Syllabus-pdf-y4 %}{% endblock Syllabus-pdf-y4 %}" download><div id="main-box"><div id="f-box">4</div><p>Fourth Year</p></div></a>
+</div>
+</section>
+
+<section class="graph">
+    <div class="g-card">
+        <h2>{% block g-heading %}{% endblock g-heading %}
+      </h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 376 173" fill="none">
+        <path class="path" d="M-2 171L66.1078 89.6512L100 119L153.353 100.335L183.5 110L214.144 89.6512L243 110L295.198 75.5943L319.401 30.0498L337.5 40L353.174 30.0498L374 -2" stroke="url(#paint0_linear_1389_705)" stroke-width="4"/>
+      <defs>
+        <linearGradient id="paint0_linear_1389_705" x1="374" y1="1.49999" x2="3.00001" y2="165" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#1A936E"/>
+        <stop offset="1" stop-color="#00699F"/>
+        </linearGradient>
+      </defs>
+      </svg>
+        <ul>
+          <li> {% block g-list1 %}{% endblock g-list1 %}</li>
+          <li>{% block g-list2 %}{% endblock g-list2 %}</li>
+          <li>{% block g-list3 %}{% endblock g-list3 %}</li>
+        </ul>
+      </div>
+</section>
+<footer class="grid grid-four-col">
+    <div class="po">
+        <div class="fHeading">PROGRAM OFFERED</div>
+        <ul>
+            <li><a href="/Civil_Engineering">Civil Engineering</a></li>
+            <li><a href="/Mechanical_Engineering">Mechanical Engineering</a></li>
+            <li><a href="/Computer_Science_and_engineering">Computer Science Engineering</a></li>
+            <li><a href="/Artificial_Intelligence_and_Machine_Learning">Artificial Intelligence & Machine Learning</a></li>
+            <li><a href="/Robotics_and_Automation">Robotics & Automation</a></li>
+        </ul>
+    </div>
+    <div class="au">
+        <div class="fHeading">ABOUT US</div>
+        <ul>
+            <li><a href="/Utu">About UTU</a></li>
+            <li><a href="/Institude">About Institute</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="course.html">Syllabus</a></li>
+            <li><a href="/Dress_code">Dress Code</a></li>
+  
+        </ul>
+  
+    </div>
+    <div class="ac">
+        <div class="fHeading">ACADEMICS</div>
+        <ul>
+            <li><a href="doc/Academic-Calender.pdf">Academic Calendar</a></li>
+            <li><a href="admission.html">Admission Process</a></li>
+            <li><a href="Fee_Structure">Fee Structure</a></li>
+              <li><a href="/Course_Offered">Course Offered</a></li>
+              <li><a href="/Syllabus">Syllabus</a></li>
+              <li><a href="/Induction_Programme">Induction Programme</a></li>
+        </ul>
+    </div>
+    <div class="ql">
+        <div class="fHeading">QUICK LINKS</div>
+        <p> <i class="fa-solid fa-location-arrow"></i>AAMBAGH, TANAKPUR</p><br/>
+        <p> <i class="fa-solid fa-location-dot"></i>Aambag, Tanakpur, Uttarakhand 262309</p><br/>
+        <span>
+        <a href="https://www.facebook.com/pilibhittigerreserve.in">  <i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/pilibhittiger.reserve/">  <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/PilibhitR">  <i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCMCfyY2Xn7vVxg0twh4XRzw?view_as=subscriber">  <i class="fa-brands fa-youtube"></i></a>
+        </span>
+        <div id="google_translate_element"></div>
+         <script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+         <script>
+  function googleTranslateElementInit(){
+     new google.translate.TranslateElement(
+         {pageLanguage:'en'},
+         'google_translate_element'
+     );
+  }
+         </script>
+     
+    </div>
+  </footer>
+  <div class="copy"><p>copyright ©️2022 all rights reserved || this website made by <a href="https://techcoder.info/">ittanakpur</a> </p></div>
+  
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script src="../static/JS/index.js"></script>
